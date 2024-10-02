@@ -8,7 +8,6 @@ export default function Footer() {
   return (
     <>
 
-
       <div className='footer-container'>
 
         <div className="container-fluid footer-section-1 g-0">
@@ -296,7 +295,6 @@ export default function Footer() {
 
 
       </div>
-
 
     </>
   )
