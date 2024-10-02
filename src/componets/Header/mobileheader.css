@@ -30,3 +30,13 @@
     color: #101922;
     font-weight: 600;
 }
+
+.border-desk{
+    border-bottom: 1px dotted black;
+}
+
+
+.bg-deskConvas{
+    background-color: #F0F3F5;
+
+}

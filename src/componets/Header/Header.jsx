@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./Header.css";
 import DropdownNavItem from "./DropdownNavItem";
 import Mobileheader from "./mobileheader";
+import PcDrop from "./dropdowns/PcDrop";
+import ConfiguraterPc from "./dropdowns/ConfiguraterPc";
+import Ordinatur from "./dropdowns/Ordinatur";
+import PCeditiondrop from "./dropdowns/PCeditiondrop";
+import Reductions from "./dropdowns/Reductions";
+import deskCanvas from "./Offcanvas/deskCanvas";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
@@ -23,7 +29,7 @@ export default function Header() {
     <>
       {isMobile ? (
         /* Mobile Header */
-        < Mobileheader/>
+        <Mobileheader />
       ) : (
         /* Desktop Header */
         <div className="top-header">
@@ -145,15 +151,30 @@ export default function Header() {
                   <a href="#" className="nav-icon">
                     <i className="fas fa-user" />
                   </a>
-                  <a href="#" className="nav-icon">
+                  <a
+                    href="#"
+                    className="nav-icon"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#searchOffcanvas"
+                    aria-controls="searchOffcanvas"
+                  >
                     <i className="fas fa-shopping-cart" />
                   </a>
                 </div>
               </div>
             </div>
           </nav>
+          <deskCanvas />
         </div>
       )}
+
+      {/* ALL NAV BAR DROP DOWNS */}
+ 
+      {/* <PcDrop/> */}
+      {/* <ConfiguraterPc /> */}
+      {/* <Ordinatur/> */}
+      {/* <PCeditiondrop/> */}
+      {/* <Reductions/> */}
     </>
   );
 }
