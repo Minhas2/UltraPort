@@ -7,11 +7,16 @@ import ConfiguraterPc from "./dropdowns/ConfiguraterPc";
 import Ordinatur from "./dropdowns/Ordinatur";
 import PCeditiondrop from "./dropdowns/PCeditiondrop";
 import Reductions from "./dropdowns/Reductions";
-import deskCanvas from "./Offcanvas/deskCanvas";
+import DeskCanvas from "./Offcanvas/DeskCanvas";
 import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   // Update state based on window width
   const handleResize = () => {
@@ -25,6 +30,8 @@ export default function Header() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  
 
   return (
     <>
@@ -152,12 +159,11 @@ export default function Header() {
                   <a href="#" className="nav-icon">
                     <i className="fas fa-user" />
                   </a>
-                  <a
-                    href="#"
+                  <a onClick={handleShow}
                     className="nav-icon"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#searchOffcanvas"
-                    aria-controls="searchOffcanvas"
+                    // data-bs-toggle="offcanvas"
+                    // data-bs-target="#searchOffcanvas"
+                    // aria-controls="searchOffcanvas"
                   >
                     <i className="fas fa-shopping-cart" />
                   </a>
@@ -165,7 +171,7 @@ export default function Header() {
               </div>
             </div>
           </nav>
-          <deskCanvas />
+          <DeskCanvas show={show} handleClose={handleClose}/>
         </div>
       )}
 
