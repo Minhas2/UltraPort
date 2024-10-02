@@ -1,9 +1,10 @@
 import React from 'react'
 import "./passion.css"
 
-export default function Passion() {
-    return (
-        <div className='container'>
+
+const Passion = () => {
+  return (
+    <div className='container'>
             <div className='pass-font'>
 
                 <h2 className="text-center"><strong>Notre passion pour les <em>Ordinateur Gamer</em></strong></h2>
@@ -20,5 +21,7 @@ export default function Passion() {
 
             </div>
         </div>
-    )
+  )
 }
+
+export default Passion

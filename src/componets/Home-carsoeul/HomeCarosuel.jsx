@@ -8,8 +8,8 @@ export default function HomeCarosuel() {
 
   const carouselData = [
     { image: 'HomeCarosuel_1.jpg', url: "/landing-page" },
-    { image: 'HomeCarosuel_2.jpg', url: "/abc" },
-    { image: 'HomeCarosuel_3.jpg', url: "/xyz" }
+    { image: 'HomeCarosuel_2.jpg', url: "/landing-page" },
+    { image: 'HomeCarosuel_3.jpg', url: "/landing-page" }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

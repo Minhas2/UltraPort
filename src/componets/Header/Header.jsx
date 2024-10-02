@@ -8,6 +8,7 @@ import Ordinatur from "./dropdowns/Ordinatur";
 import PCeditiondrop from "./dropdowns/PCeditiondrop";
 import Reductions from "./dropdowns/Reductions";
 import deskCanvas from "./Offcanvas/deskCanvas";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
@@ -85,13 +86,13 @@ export default function Header() {
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div className="container ">
               {/* Logo */}
-              <a className="navbar-brand" href="#">
+              <Link className="navbar-brand" to={"/"}>
                 <img
                   src="../assets/ultrport.png"
                   alt="Logo"
                   className="navbar-logo"
                 />
-              </a>
+              </Link>
               {/* Hamburger Icon for mobile */}
               <button
                 className="navbar-toggler"
