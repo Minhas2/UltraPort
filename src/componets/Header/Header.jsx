@@ -52,8 +52,8 @@ export default function Header() {
 
               <div className="d-flex align-items-center top-font">
                 <span className="gray">PAYS</span>
-                <div className="ps-3">
-                  <div className="dropdown ">
+                <div className="country ps-3">
+                  <div className=" dropdown">
                     <button
                       className="btn btn-secondary dropdown-toggle bg-transparent border-0"
                       type="button"
@@ -62,7 +62,7 @@ export default function Header() {
                     >
                       <img src="../assets/flag-fr-fr.svg" alt="" /> FRANCE
                     </button>
-                    <ul className="dropdown-menu dropdown-menu-dark w-100 custom-dropdown ">
+                    <ul className="dropdown-menu dropdown-menu-dark w-100 custom-dropdown">
                       <li>
                         <a className="dropdown-item active" href="#">
                           Italia
@@ -80,7 +80,7 @@ export default function Header() {
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          United kingdom
+                          United Kingdom
                         </a>
                       </li>
                     </ul>
@@ -90,8 +90,8 @@ export default function Header() {
             </div>
           </div>
 
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div className="container ">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container">
               {/* Logo */}
               <Link className="navbar-brand" to={"/"}>
                 <img
@@ -159,14 +159,9 @@ export default function Header() {
                   <a href="#" className="nav-icon">
                     <i className="fas fa-user" />
                   </a>
-                  <a onClick={handleShow}
-                    className="nav-icon"
-                    // data-bs-toggle="offcanvas"
-                    // data-bs-target="#searchOffcanvas"
-                    // aria-controls="searchOffcanvas"
-                  >
+                  <button onClick={handleShow} className="nav-icon" >
                     <i className="fas fa-shopping-cart" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -175,13 +170,12 @@ export default function Header() {
         </div>
       )}
 
-      {/* ALL NAV BAR DROP DOWNS */}
- 
-      {/* <PcDrop/> */}
+      {/* Uncomment and use these dropdowns when needed */}
+      {/* <PcDrop /> */}
       {/* <ConfiguraterPc /> */}
-      {/* <Ordinatur/> */}
-      {/* <PCeditiondrop/> */}
-      {/* <Reductions/> */}
+      {/* <Ordinatur /> */}
+      {/* <PCeditiondrop /> */}
+      {/* <Reductions /> */}
     </>
   );
 }

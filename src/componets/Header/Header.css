@@ -16,7 +16,7 @@
     font-size: 1rem;
 }
 
-.dropdown-toggle::after {
+.country .dropdown-toggle::after {
    margin-left: 4.255em;
 }
 
