@@ -1,9 +1,13 @@
 import React from 'react';
-import "./LandingPage.css";
+import "./Page5.css";
 import Card from '../../componets/Card/Card';
+import ASSET_PATHS from '../../utils/constant';
 
-export default function LandingPage() {
+export default function Page4() {
 
+
+
+  const imgURL = ASSET_PATHS.IMG_URL;
 
   const productCardData = [
     {
@@ -46,7 +50,44 @@ export default function LandingPage() {
 
   return (
     <>
-      <Card productCardData={productCardData} />
+
+      <div className='page-5'>
+
+        <div className='container '>
+
+
+          <div className='image-container'>
+            <img src={`${imgURL}/page5-1.jpg`} className='w-100' />
+          </div>
+
+
+          <div className='image-container'>
+            <img src={`${imgURL}/page5-2.jpg`} className='w-100' />
+          </div>
+
+          <div className='image-container '>
+            <img src={`${imgURL}/page5-3.jpg`} className='w-100' />
+          </div>
+
+          <div className='image-container '>
+            <img src={`${imgURL}/page5-4.jpg`} className='w-100' />
+          </div>
+
+          <div className='image-container '>
+            <img src={`${imgURL}/page5-5.jpg`} className='w-100' />
+          </div>
+
+          <Card productCardData={productCardData} />
+
+
+
+        </div>
+
+
+      </div>
+
+
+
     </>
   );
 }
