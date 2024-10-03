@@ -7,7 +7,14 @@ import ConfiguraterPc from "./dropdowns/ConfiguraterPc";
 import Ordinatur from "./dropdowns/Ordinatur";
 import PCeditiondrop from "./dropdowns/PCeditiondrop";
 import Reductions from "./dropdowns/Reductions";
-import deskCanvas from "./Offcanvas/deskCanvas";
+import DeskCanvas from "./Offcanvas/deskCanvas"; // Rename to use PascalCase
+import CoreI5 from "../Home/PC GAMER dropdown components/CoreI5";
+import AMD from "../Home/PC GAMER dropdown components/AMDRyzen";
+import PCgamercomplet from "../Home/PC GAMER dropdown components/PCgamercomplet";
+import GamingPC800Euro from "../Home/PC GAMER dropdown components/GamingPC800Euro";
+import Windows11 from "../Home/PC GAMER dropdown components/Windows11";
+import PCgamerMain from "../Home/PC GAMER dropdown components/PCgamerMain";
+
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
@@ -44,8 +51,8 @@ export default function Header() {
 
               <div className="d-flex align-items-center top-font">
                 <span className="gray">PAYS</span>
-                <div className="ps-3">
-                  <div className="dropdown ">
+                <div className="country ps-3">
+                  <div className=" dropdown">
                     <button
                       className="btn btn-secondary dropdown-toggle bg-transparent border-0"
                       type="button"
@@ -54,7 +61,7 @@ export default function Header() {
                     >
                       <img src="../assets/flag-fr-fr.svg" alt="" /> FRANCE
                     </button>
-                    <ul className="dropdown-menu dropdown-menu-dark w-100 custom-dropdown ">
+                    <ul className="dropdown-menu dropdown-menu-dark w-100 custom-dropdown">
                       <li>
                         <a className="dropdown-item active" href="#">
                           Italia
@@ -72,7 +79,7 @@ export default function Header() {
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          United kingdom
+                          United Kingdom
                         </a>
                       </li>
                     </ul>
@@ -82,8 +89,8 @@ export default function Header() {
             </div>
           </div>
 
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div className="container ">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container">
               {/* Logo */}
               <a className="navbar-brand" href="#">
                 <img
@@ -164,17 +171,29 @@ export default function Header() {
               </div>
             </div>
           </nav>
-          <deskCanvas />
+
+          {/* DeskCanvas for off-canvas menu */}
+          <DeskCanvas />
         </div>
       )}
 
-      {/* ALL NAV BAR DROP DOWNS */}
- 
-      {/* <PcDrop/> */}
+      {/* Uncomment and use these dropdowns when needed */}
+      {/* <PcDrop /> */}
       {/* <ConfiguraterPc /> */}
-      {/* <Ordinatur/> */}
-      {/* <PCeditiondrop/> */}
-      {/* <Reductions/> */}
+      {/* <Ordinatur /> */}
+      {/* <PCeditiondrop /> */}
+      {/* <Reductions /> */}
+
+
+      {/*Uncomment and use them PC GAMER Components */}
+      <CoreI5/>
+      {/* <AMD/> */}
+      {/* <PCgamercomplet/> */}
+      {/* <GamingPC800Euro/> */}
+      {/* <Windows11/> */}
+      {/* <PCgamerMain/> */}
+
+
     </>
   );
 }

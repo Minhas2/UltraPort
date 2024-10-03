@@ -21,17 +21,17 @@ function App() {
 <Header/>
 
 
-<HomeCarosuel/>
-<HeroUltra/>
+{/* <HomeCarosuel/> */}
+{/* <HeroUltra/> */}
 
-<Passion/>
-<Categories/>
+{/* <Passion/> */}
+{/* <Categories/> */}
 
 {/* <Influencers/> */}
-<Advantages/>
+{/* <Advantages/> */}
 
 
-<Review/>
+{/* <Review/> */}
 
 <Footer/>
 
