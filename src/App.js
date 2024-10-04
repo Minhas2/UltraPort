@@ -19,6 +19,10 @@ import Page9 from './Pages/Page9/Page9';
 import Page10 from './Pages/Page10/Page10';
 import Page11 from './Pages/Page11/Page11';
 import Page12 from './Pages/Page12/Page12';
+import PcPourJouer from './Pages/PcPourJouer/PcPourJouer';
+import Wukong from './Pages/Wukong/Wukong';
+import Starfield from './Pages/Starfield/Starfield';
+import Diablo from './Pages/Diablo/Diablo';
 
 
 
@@ -28,10 +32,11 @@ function App() {
       {/* <Header/> */}
 
       {/* <Card /> */}
-     
+
 
       <Routes>
         <Route path='/' element={<HomeCarosuel />} />
+        {/* Carosuel Page  */}
         <Route path='/landing-page' element={<LandingPage />} />
         <Route path='/page-1' element={<Page1 />} />
         <Route path='/page-2' element={<Page2 />} />
@@ -39,12 +44,21 @@ function App() {
         <Route path='/page-4' element={<Page4 />} />
         <Route path='/page-5' element={<Page5 />} />
         <Route path='/page-6' element={<Page6 />} />
-        <Route path='/page-7' element={<Page7 />} />
+        <Route path='/page-7' element={<Page7 />} />  {/*  Hassan designed this page*/}
         <Route path='/page-8' element={<Page8 />} />
         <Route path='/page-9' element={<Page9 />} />
         <Route path='/page-10' element={<Page10 />} />
         <Route path='/page-11' element={<Page11 />} />
         <Route path='/page-12' element={<Page12 />} />
+
+
+        {/* static page  */}
+
+        <Route path='/corsair-icue-murals' element={<Page11 />} /> {/* This page is already covered by Page 11 */}
+        <Route path='/pc-pour-jouer' element={<PcPourJouer />} />
+        <Route path='/wukong' element={<Wukong />} />
+        <Route path='/starfield' element={<Starfield />} />
+        <Route path='/diablo' element={<Diablo />} />
 
       </Routes>
 

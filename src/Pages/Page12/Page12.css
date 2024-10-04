@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.page-11 .content-2 h1 {
+.page-12 .content-2 h1 {
     font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: 10px;
@@ -72,10 +72,12 @@
 .page-12 .section-2 {
     background-color: #1b1b1b;
 }
+
 .page-12 .section-2 .content {
     text-align: left;
     color: #77797a;
 }
+
 .page-12 .section-2 .content h1 {
     font-size: 2rem;
     font-weight: 500;
@@ -84,6 +86,7 @@
     margin: 1vh 0;
 
 }
+
 .page-12 .section-2 .content h6 {
     font-size: 1rem;
     font-weight: 800;
@@ -91,6 +94,7 @@
     margin: 1vh 0;
 
 }
+
 .page-12 .section-2 .content p {
     font-size: 1rem;
     font-weight: 500;
@@ -98,6 +102,7 @@
     margin: 1vh 0;
 
 }
+
 .page-12 .section-2 .content span {
     font-size: 1rem;
     font-weight: 500;
@@ -150,7 +155,7 @@
     }
 
     .page-12 .section-2 {
-padding: 0 5vw;
+        padding: 0 5vw;
 
     }
 

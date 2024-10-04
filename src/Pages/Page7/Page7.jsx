@@ -47,6 +47,9 @@ export default function Page7() {
   return (
     <>
       <Card productCardData={productCardData} />
+
+      {/* hassan has designed this page */}
+
     </>
   );
 }

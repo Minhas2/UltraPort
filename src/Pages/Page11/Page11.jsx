@@ -99,13 +99,6 @@ export default function Page11() {
             <img src={`${imgURL}/page11-7.jpg`} className='w-100' />
           </div>
 
-          <div className='image-container '>
-            <img src={`${imgURL}/page11-8.jpg`} className='w-100' />
-          </div>
-
-          <div className='image-container '>
-            <img src={`${imgURL}/page11-9.jpg`} className='w-100' />
-          </div>
 
 
 
