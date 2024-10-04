@@ -186,7 +186,7 @@ export default function Header() {
 
 
       {/*Uncomment and use them PC GAMER Components */}
-      <CoreI5/>
+      {/* <CoreI5/> */}
       {/* <AMD/> */}
       {/* <PCgamercomplet/> */}
       {/* <GamingPC800Euro/> */}

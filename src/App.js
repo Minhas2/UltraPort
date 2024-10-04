@@ -12,26 +12,37 @@ import HomeCarosuel from './componets/Home/Home-carsoeul/HomeCarosuel';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Review from './componets/Home/Review/Review';
+import DetailedProducts from './componets/Page/DetailedProducts';
+import ConfigPc from './componets/Page/ConfigPc';
+
+
 
 
 
 function App() {
   return (
-<>
+    <>
 <Header/>
 
-
+{/* HOME COMPonents DOWN */}
 {/* <HomeCarosuel/> */}
 {/* <HeroUltra/> */}
-
 {/* <Passion/> */}
 {/* <Categories/> */}
-
 {/* <Influencers/> */}
 {/* <Advantages/> */}
 
-
 {/* <Review/> */}
+{/* HOME COMPonents DOWN END*/}
+
+
+{/* Detaile product start */}
+{/* <DetailedProducts/> */}
+<ConfigPc/>
+
+
+
+
 
 <Footer/>
 
