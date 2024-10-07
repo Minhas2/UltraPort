@@ -4,7 +4,11 @@ import "./Advantages.css"
 export default function Advantages() {
     return (
         <>
+        
             <div className='advantage-background'>
+
+                
+                
                 <div className='container'>
                     <div className="row text-white">
                         <div className="col-lg-4">
