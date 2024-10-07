@@ -171,7 +171,7 @@ Les cartes prépayées, virtuelles et à autorisation systématique ne sont pas 
 
           {/* faq panding */}
 
-          <div className="container pops">
+          <div className="container px-5">
             <FAQ />
           </div>
 

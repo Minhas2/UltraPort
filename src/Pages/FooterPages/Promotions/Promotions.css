@@ -1,55 +1,62 @@
-.page-12 .content h1 {
-    font-size: 2.5rem;
+.Promotions .content h1 {
+    font-size: 2rem;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
 }
 
-.page-12 .content span {
+.Promotions .content span {
     color: #89c600
 }
 
-.page-12 .content p {
-    font-size: 1.1rem;
+.Promotions .content p {
+    font-size: 1rem;
     line-height: 1.4;
     color: #5e646b;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
 }
 
-.page-12 .content-2 h1 {
+.Promotions .content-2 h1 {
     font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.page-12 .content-2 p {
+.Promotions .content-2 p {
     font-size: 1rem;
     line-height: 1.4;
     color: #5e646b;
     font-weight: 500;
 }
 
-.page-12 .section h1 {
+.Promotions .section {
     font-size: 1.4rem;
     line-height: 1.4rem;
-    color: black;
+ color:white;
+    background-color: #101922;    ;
     font-weight: 500;
 }
 
-.page-12 .section p {
-    font-size: 1rem;
+.Promotions .section h1 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+}
+
+.Promotions .section p {
+    margin-top: 10px;
+    font-size: 0.8rem;
     line-height: 1.4rem;
     font-weight: 400;
 }
 
-.page-12 .section ul li {
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 400;
+.Promotions .section button {
+    padding: 10px 20px;
+font-size: 16px;
 }
 
 
-.page-12.image-container {
+.Promotions.image-container {
     width: 100%;
     /* Full width of the parent container */
     overflow: hidden;
@@ -60,7 +67,7 @@
     /* Center the image */
 }
 
-.page-12 .image-container img {
+.Promotions .image-container img {
     width: 100%;
     /* Make the image take the full width of the container */
     height: auto;
@@ -69,16 +76,16 @@
     /* Prevent any extra space below the image */
 }
 
-.page-12 .section-2 {
+.Promotions .section-2 {
     background-color: #1b1b1b;
 }
 
-.page-12 .section-2 .content {
+.Promotions .section-2 .content {
     text-align: left;
     color: #77797a;
 }
 
-.page-12 .section-2 .content h1 {
+.Promotions .section-2 .content h1 {
     font-size: 2rem;
     font-weight: 500;
     text-align: left;
@@ -87,7 +94,7 @@
 
 }
 
-.page-12 .section-2 .content h6 {
+.Promotions .section-2 .content h6 {
     font-size: 1rem;
     font-weight: 800;
     text-align: left;
@@ -95,7 +102,7 @@
 
 }
 
-.page-12 .section-2 .content p {
+.Promotions .section-2 .content p {
     font-size: 1rem;
     font-weight: 500;
     text-align: left;
@@ -103,7 +110,7 @@
 
 }
 
-.page-12 .section-2 .content span {
+.Promotions .section-2 .content span {
     font-size: 1rem;
     font-weight: 500;
     text-align: left;
@@ -118,19 +125,19 @@
 @media (max-width: 768px) {
 
 
-    .page-12 .container {
+    .Promotions .container {
         padding: 0;
     }
 
-    .page-12 .content h1 {
+    .Promotions .content h1 {
         font-size: 2.2rem;
     }
 
-    .page-12 .content span {
+    .Promotions .content span {
         color: #89c600
     }
 
-    .page-12 .content p {
+    .Promotions .content p {
         font-size: 1rem;
         line-height: 1.4;
         color: #5e646b;
@@ -139,14 +146,14 @@
     }
 
 
-    .page-12 .content-2 h1 {
+    .Promotions .content-2 h1 {
         font-size: 1.7rem;
         font-weight: 500;
         text-align: center;
     }
 
 
-    .page-12 .content-2 p {
+    .Promotions .content-2 p {
         font-size: 1rem;
         line-height: 1.4;
         color: #5e646b;
@@ -154,7 +161,7 @@
         text-align: center;
     }
 
-    .page-12 .section-2 {
+    .Promotions .section-2 {
         padding: 0 5vw;
 
     }

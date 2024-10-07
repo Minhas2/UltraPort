@@ -202,15 +202,17 @@ export default function Page12() {
           </div>
 
         </div>
-<div className='container p-5'>
 
-        <div className='image-container'>
-              <img src={`${imgURL}/page12-6.png`} className='w-100' />
-            </div>
+
+        <div className='container p-5'>
+
+          <div className='image-container'>
+            <img src={`${imgURL}/page12-6.png`} className='w-100' />
+          </div>
+        </div>
+
+
       </div>
-
-
-</div>
 
 
 
