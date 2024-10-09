@@ -26,7 +26,7 @@ function App() {
       <Header />
 
       {/* HOME Components START */}
-      <HomeCarosuel />
+      {/* <HomeCarosuel />
       <HeroUltra />
       <HomeProdcutCarsouel />
       <PcProductCarsouel/>
@@ -34,13 +34,13 @@ function App() {
       <Categories />
       <Influencers />
       <Advantages />
-      <Review />
+      <Review /> */}
       {/* HOME Components END */}
 
       {/* Detailed product components */}
       {/* Uncomment these as needed */}
       {/* <DetailedProducts /> */}
-      {/* <ConfigPc /> */}
+      <ConfigPc />
 
       <Footer />
     </>

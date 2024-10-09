@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+
 import "./DetailedProducts.css";
+import WhiteStrip from "../smallcomponents/Whitestrip";
+
 
 // StarRating Component
 function StarRating({ rating }) {
@@ -357,52 +360,15 @@ export default function DetailedProducts() {
       {/*Avis component ends*/}
 
       {/* white strip */}
-      <div className="container pops py-4">
-        <div className="d-flex justify-content-between flex-lg-row flex-sm-column align-items-center">
-          <div className="d-flex">
-            <p className="green mb-0">
-              <i class="fa-regular fa-clock"></i>
-              <span className="ps-2">Délai de livraison 4-6 jours ouvrés</span>
-            </p>
-            <span className="px-3">|</span>
-
-            <p className="bold mb-0">
-              Alma
-              {installmentOptions.map((option, index) => (
-                <span
-                  key={index}
-                  className={`installment-option ms-2 ${
-                    selectedOption === index ? "active" : ""
-                  }`} // Add 'active' class to change style if selected
-                  onClick={() => handleOptionClick(index)}
-                  style={{ cursor: "pointer" }} // Change cursor on hover
-                >
-                  {option.times}
-                </span>
-              ))}
-            </p>
-
-            {/* Display the selected price */}
-            {selectedOption !== null && (
-              <span className="ps-4 price-display">
-                {installmentOptions[selectedOption].price}
-              </span>
-            )}
-          </div>
-
-          <div className="d-flex ">
-            <div className="d-flex flex-column">
-              <p className="line-through  mb-0 text-danger">629,00 €</p>
-              <h2 className="mb-0">599,00 €</h2>
-            </div>
-            <button className="product-btn ms-3">
-              Un problème est survenu
-              <i className="fas fa-shopping-cart ps-2" />
-            </button>
-          </div>
+   
           
-        </div>
-      </div>
+      <WhiteStrip
+        installmentOptions={installmentOptions} 
+        selectedOption={selectedOption} 
+        handleOptionClick={handleOptionClick} 
+      />
+
+     
 
       {/* white strip ends */}
     </>

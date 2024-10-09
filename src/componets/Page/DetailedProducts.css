@@ -131,3 +131,67 @@
      font-weight: bold;
 
   }
+
+
+  .white-MiniBorder{
+    border-top: 1px solid #89C600;
+  }
+
+  .old{
+    font-size: 12px;
+  }
+
+  .new{
+    font-size: 18px;
+  }
+  .p-12 {
+    padding-left: 12px;
+}
+  .mob-alma h1{
+    font-weight: bold;
+    font-size: 18px
+    ;
+  }
+  .mob-alma p{
+    font-weight: 500;
+    font-size: 14px
+    ;
+  }
+
+  .bot-mob-alma .container{
+    --bs-gutter-x: 0rem;
+  }
+
+  @media (max-width: 575px) {
+    .product-btn {
+      align-items: center;
+      font-size: 14px;
+      background-color: #89c600;
+      border: none;
+      padding: 11px 42px;
+      color: white;
+      font-weight: bold;
+      clip-path: polygon(0.4rem 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+
+  }
+
+  @media (max-width: 412px) {
+    .product-btn {
+      align-items: center;
+      font-size: 14px;
+      background-color: #89c600;
+      border: none;
+      padding: 2px 15px;
+      color: white;
+      font-weight: bold;
+      clip-path: polygon(0.4rem 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .f-357 {
+    font-size: 14px;
+}
+
+
+  }
