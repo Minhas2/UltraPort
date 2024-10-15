@@ -1,5 +1,13 @@
 .top-header{
-    background-color: #373F47;
+    /* background-color: #373F47; */
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+}
+.preNavbar{
+  background-color: #373F47;
 }
 
 .number{
@@ -56,6 +64,13 @@
     color: white;
   }
   
+  @media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1408px;
+  }
+}
+
+
   /* Media Query for Mobile (max-width 1020px) */
   @media (max-width: 1020px) {
     /* Center the nav links vertically in mobile */
@@ -76,6 +91,15 @@
       justify-content: center;
       padding-top: 1rem;
     }
+
+
+
+    /*  small font for links*/
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+  }
   }
   
 
@@ -163,3 +187,19 @@
 .offcanvas-nav a:hover {
   color: lightgray; /* Change color on hover */
 }
+
+
+.megaNav{
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  width: 100vw;
+  left: 0;
+  display: none;
+  top: 88px;
+}
+
+.top-header .navbar .navbar-nav li:hover .megaNav{
+  display: block;
+}
+

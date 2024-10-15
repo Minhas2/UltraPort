@@ -7,9 +7,10 @@
 }
 
 .border-pc div {
-    border-bottom: 1px solid transparent; /* Set transparent border initially */
-  }
-  
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+}
   .border-pc div:hover {
     border-bottom: 1px solid #7bc248; /* Change border to green on hover */
     cursor: pointer; /* Optionally, change the cursor to pointer */
@@ -35,4 +36,57 @@
 
 .overflow{
     overflow: hidden;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 2.2em;
+    margin-bottom: .125rem;
+}
+
+.pc-hero h2{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+.font-u{
+    font-size: 15px;
+}
+
+
+
+
+.h3-gamer{
+    font-size: 34px;
+    font-weight: 500;
+}
+
+@media (max-width: 425px) {
+
+    .simple-width {
+        max-width: 100%;
+    }
+
+    .none-425{
+        display: none;
+    }
+
+    .p-425{
+        padding: 30px;
+    }
+
+    .pc-hero h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+
+    .trouve-width {
+        max-width: 87%;
+    
+    }
+
+
 }

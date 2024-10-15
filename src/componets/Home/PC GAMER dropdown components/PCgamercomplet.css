@@ -1,3 +1,72 @@
-.PDrop  .dropdown-toggle::after {
+/* .PDrop  .dropdown-toggle::after {
     margin-left: 5.255em;
+} */
+
+.border-pc {
+   
+    max-width: 100%; /* Optional: limit width for responsive behavior */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+
+
+  .font-9 {
+    font-size: 14.5px;
+}
+
+.p-dropCommon {
+    padding: 31px 10px 15px;
+}
+
+.comp-h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+
+
+
+@media (max-width: 1390px) {
+
+    .form-check-label{
+        font-size: 12px;
+    }
+
+    .I5  .dropdown-toggle {
+        font-size: 11px;
+        border: 1px solid #d1d3d4;
+        padding: 9px;
+        background-color: white;
+        border-radius: 0;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .I5  .dropdown-toggle {
+        font-size: 15px;
+    }
+
+    .p-dropCommon {
+        padding: 21px 9px 5px;
+    }
+}
+
+
+
+
+
+
+
+/* 425 */
+
+@media (max-width: 425px) {
+    .comp-h3 {
+        font-size: 34px;
+        font-weight: 500;
+    }
+
+
 }

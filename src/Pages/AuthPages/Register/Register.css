@@ -1,0 +1,115 @@
+.register {
+   padding: 0 5vw;
+}
+.register .main {
+    margin-top: 5vh;
+}
+
+.register .heading {
+    margin: 2vh 0;
+}
+
+.register .heading h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+
+.register .section h4 {
+    border-bottom: 1px solid #c3c8cd;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #5e646b;
+}
+
+.register .section form label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.register .section .form-control {
+    border-radius: 0;
+    padding: 10px;
+}
+
+.register .section .form-check {
+    margin: 10px 0;
+}
+
+.register .section .form-check-label {
+    margin: 0;
+    font-weight: 400;
+    text-transform: none;
+    margin-left: 5px;
+    font-size: .9rem
+}
+
+.register .section .form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.register .form-button {
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.register .section .text-muted {
+    --bs-text-opacity: 1;
+    color: var(--bs-secondary-color) !important;
+    font-size: 0.78rem;
+    margin: 10px 5px
+}
+.register .form-button button {
+    padding: 15px 30px;
+    background-color: #101922;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #101922 50%, #66b100 50%);
+    transition: background-position 0.2s ease-in-out;
+}
+
+.register .form-button button:hover {
+    background-position: -100% 0;
+    color: white;
+    /* Change text color to white on hover */
+}
+
+.register .section-2 {
+    margin-bottom: 10vh;
+}
+
+.register .section-2 h4 {
+    border-bottom: 1px solid #c3c8cd;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #5e646b;
+
+}
+
+.register .section-2 p {
+    color: #5e646b;
+    font-weight: 400;
+
+
+}
+
+.register .section-2 button {
+    border-color: #a88734 #9c7e31 #846a29;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    padding: 8px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+
+
+
+
+.register .section-2 button img {
+    max-height: 17px;
+}

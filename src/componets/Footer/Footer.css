@@ -1,0 +1,321 @@
+.footer-section-1 {
+    background-color: #373f47;
+    /* Background color of the right section */
+}
+
+.footer-section-1 .left-image img {
+    max-height: 100%;
+    /* Ensure the image scales responsively */
+    object-fit: cover;
+    /* Keep aspect ratio */
+}
+
+.footer-section-1 h3 {
+    font-size: 2rem;
+}
+
+.footer-section-1 p {
+    font-size: 0.7rem;
+    color: #b4b9bb;
+}
+
+
+
+.footer-section-1 .newsletter-form {
+    width: 100%;
+    display: flex;
+}
+
+.footer-section-1 .newsletter-form input {
+    width: 50%;
+    background-clip: border-box;
+    background-color: #101922;
+    border-color: #101922;
+    color: #b4b9bb;
+    padding: 2vh 1.5vw;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 0;
+    box-shadow: none;
+    color: #101922;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1vh;
+    transition: all 0.3s ease-in-out;
+
+    /* Smooth transition on focus */
+}
+
+.footer-section-1 .newsletter-form input:focus {
+    border-color: green;
+    /* Change border color to green */
+    background-color: white;
+    /* Change background color to white */
+    color: black;
+    /* Change text color to black */
+    outline: none;
+    /* Remove the default blue outline */
+}
+
+.footer-section-1 .newsletter-form button {
+    background-color: #fff;
+    padding: 2vh 2vw;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 0;
+    box-shadow: none;
+    color: #101922;
+    font-family: inherit;
+    font-size: 0.8rem;
+    line-height: 1vh;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+    background: #fff;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #fff 50%, #89c600 50%);
+    transition: background-position 0.2s ease-in-out;
+}
+
+.footer-section-1 .newsletter-form button:hover {
+    background-position: -100% 0;
+    color: #fff;
+    /* Optional: Change text color on hover */
+}
+
+.footer-section-1 .text-white {
+    padding: 20px;
+    /* Add padding around the text */
+}
+
+
+@media (max-width: 991px) {
+
+    .footer-section-1 h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-section-1 p {
+        font-size: 0.9rem;
+    }
+
+    .footer-section-1 .newsletter-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section-1 .newsletter-form input {
+        width: 100%;
+    }
+
+    .footer-section-1 .newsletter-form button {
+        margin: 2vh 0;
+        width: 30%;
+    }
+}
+
+
+.footer-section-2-responsive {
+    display: none;
+}
+
+.footer-section-2 {
+    display: block;
+}
+
+
+.footer-section-2 {
+    background-color: #101922;
+    color: #ffffff;
+    padding: 5vh 0;
+}
+
+.footer-section-2 ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.footer-section-2 a:hover {
+    text-decoration: underline;
+}
+
+
+
+.footer-section-2 .footer-title {
+    color: #b5b5b5;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    font-size: 16px;
+}
+
+
+
+.footer-section-2 .footer-phone {
+    color: #A1C935;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-section-2 .footer-address {
+    font-size: 14px;
+}
+
+.footer-section-2 .payment-icon {
+    margin-right: 15px;
+    width: 50px;
+}
+
+.footer-section-2 .social-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #A1C935;
+}
+
+.footer-section-2 .footer-bottom-text {
+    color: #b5b5b5;
+    font-size: 14px;
+}
+
+.footer-section-2 .icons {
+    margin: 2vh 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-section-2 {
+        display: none;
+    }
+
+    .footer-section-2-responsive {
+        display: block;
+    }
+
+    .footer-section-2-responsive {
+        background-color: #101922;
+        color: #ffffff;
+        padding: 2vh 2vw;
+    }
+
+    .footer-section-2-responsive .accordion {
+        background-color: #101922;
+        border: none !important;
+    }
+
+    .footer-section-2-responsive .accordion .accordion-item {
+        background: none;
+        background-color: #101922;
+        border: none;
+        border-bottom: 1px solid #5e646b;
+    }
+
+    .footer-section-2-responsive .accordion .accordion-item .accordion-header {
+        background: none;
+        background-color: #101922;
+    }
+
+    .footer-section-2-responsive .accordion .accordion-item .accordion-header .accordion-button {
+        background: none;
+        background-color: #101922;
+        color: #89c600;
+        /* border: none; */
+        padding: 3vh 0vw;
+        font-size: 1rem;
+        font-weight: 500;
+        box-shadow: none;
+
+    }
+
+    .footer-section-2-responsive .accordion .accordion-item .accordion-header .accordion-button::after {
+        content: "";
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-right: 2px solid #aaaeb3;
+        border-bottom: 2px solid #aaaeb3;
+        transform: rotate(45deg);
+        margin-left: auto;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .footer-section-2-responsive .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+        transform: rotate(-135deg);
+    }
+
+
+    .footer-section-2-responsive .accordion .accordion-item .accordion-body {
+        padding: 0;
+        line-height: 30px;
+        font-size: .8rem;
+        margin-bottom: 3vh;
+
+    }
+
+    .footer-section-2-responsive .accordion .accordion-item .accordion-body ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-section-2-responsive .accordion .accordion-item .accordion-body ul li a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .footer-section-2-responsive .contact {
+        margin-top: 2vh;
+    }
+
+
+    .footer-section-2-responsive .footer-title {
+        color: #b5b5b5;
+        font-weight: bold;
+        margin-bottom: 0.5vh;
+        font-size: 12px;
+    }
+
+
+
+    .footer-section-2-responsive .footer-phone {
+        color: #A1C935;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .footer-section-2-responsive .footer-address {
+        font-size: 14px;
+        line-height: 22px;
+        color: #b4b9bb;
+    }
+
+
+    .footer-section-2-responsive .section-3 h6 {
+        color: #b4b9bb;
+    }
+
+    .footer-section-2-responsive .section-3 .payment-icon {
+        margin: 2vh 0;
+        margin-right: 15px;
+        width: 50px;
+    }
+
+    .footer-section-2-responsive .social-icon {
+        margin: 2vh 0;
+        margin-right: 3vw;
+        font-size: 26px;
+        color: #A1C935;
+    }
+
+    .footer-section-2-responsive .footer-bottom-text {
+        margin: 2vh 0;
+        color: #b5b5b5;
+        font-size: 14px;
+    }
+
+
+
+
+
+}

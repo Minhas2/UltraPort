@@ -1,5 +1,5 @@
-.m-euro{
-    margin: 10px 200px;
+.m-euro {
+    margin: 10px 121px;
 }
 
 .bg-blk{
@@ -10,11 +10,43 @@
     font-size: .8rem;
 }
 
+.py-euroHero {
+    padding-top: 102px;
+    padding-bottom: 50px;
+}
+
+.py-euroHero h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.py-euroHero h2{
+    font-size: 35px;
+   
+}
+
+.py-navEURO{
+   padding: 40px 0px;
+}
+
+
+
+
+.mb-120{
+margin-bottom: 120px;
+}
+
+.font-22{
+    font-size: 22px;
+}
+
+
 
 .gamer-li li {
-    list-style-type: none; /* Remove default bullets */
+    font-size: 19px;
+    list-style-type: none;
     position: relative;
-    padding-left: 20px; /* Space for the checkmark */
+    padding-left: 20px;
     margin-bottom: 10px;
 }
 
@@ -27,3 +59,53 @@
     line-height: 1.2; /* Align with the text */
 }
 
+@media (max-width: 767px) {
+    .m-euro {
+        margin: 10px 80px;
+    }
+
+}
+
+
+
+@media (max-width: 425px) {
+    .m-euro {
+        margin: 10px 16px;
+    }
+
+    .py-euroHero h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .font-u {
+        font-size: 13px;
+    }
+
+    .font-22 {
+        font-size: 15px;
+    }
+
+    .mb-120 {
+        margin-bottom: 65px;
+    }
+
+    .py-euroHero {
+        padding-top: 59px;
+        padding-bottom: 10px;
+    }
+
+
+    .py-navEURO{
+        padding: 23px 20px 23px;
+     }
+
+     .gamer-li li {
+        font-size: 15px;
+        list-style-type: none;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+     
+}

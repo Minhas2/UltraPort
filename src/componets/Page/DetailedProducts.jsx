@@ -40,28 +40,28 @@ export default function DetailedProducts() {
   // Images array with main and thumbnail versions
   const images = [
     {
-      main: "../assets/p1.jpg",
-      thumbnail: "../assets/mini-p1.jpg",
+      main: "../../assets/p1.jpg",
+      thumbnail: "../../assets/mini-p1.jpg",
     },
     {
-      main: "../assets/p1.jpg",
-      thumbnail: "../assets/mini-p1.jpg",
+      main: "../../assets/p1.jpg",
+      thumbnail: "../../assets/mini-p1.jpg",
     },
     {
-      main: "../assets/p3.jpg",
-      thumbnail: "../assets/mini-p3.jpg",
+      main: "../../assets/p3.jpg",
+      thumbnail: "../../assets/mini-p3.jpg",
     },
     {
-      main: "../assets/p4.jpg",
-      thumbnail: "../assets/mini-p4.jpg",
+      main: "../../assets/p4.jpg",
+      thumbnail: "../../assets/mini-p4.jpg",
     },
     {
-      main: "../assets/p5.jpg",
-      thumbnail: "../assets/mini-p5.jpg",
+      main: "../../assets/p5.jpg",
+      thumbnail: "../../assets/mini-p5.jpg",
     },
     {
-      main: "../assets/p6.jpg",
-      thumbnail: "../assets/mini-p6.jpg",
+      main: "../../assets/p6.jpg",
+      thumbnail: "../../assets/mini-p6.jpg",
     },
   ];
 
@@ -126,10 +126,12 @@ export default function DetailedProducts() {
 
   return (
     <>
+
+    
       <div className="container pops">
         <div className="row">
           <div className="col-lg-6">
-            <div className="d-flex mt-4 font-8">
+            <div className="d-flex mt-4 font-u flex-wrap">
               <p>
                 Accueil <span className="ps-2">&gt;</span>
               </p>
@@ -179,7 +181,7 @@ export default function DetailedProducts() {
                 <span className="px-3">|</span>
                 <span className="gray">SKU:1811-FR</span>
               </p>
-              <h2>PC Gamer AMD Ryzen 5 Slayer</h2>
+              <h1 className="detail-h1">PC Gamer AMD Ryzen 5 Slayer</h1>
 
               <div className="centered-content mt-4">
                 <span>Détails du produit</span>
@@ -189,7 +191,7 @@ export default function DetailedProducts() {
               {productDetails.map((detail, index) => (
                 <div className="row mt-4 border-bot" key={index}>
                   <div className="col-lg-4">
-                    <p className="bold font-8">{detail.title}</p>
+                    <p className="bold font-8 mb-0">{detail.title}</p>
                   </div>
                   <div className="col-lg-8 font-8">
                     <p>{detail.description}</p>
@@ -225,8 +227,8 @@ export default function DetailedProducts() {
           <div className=" text-white">
             <h4 className="mb-5">Fonctionnalités</h4>
 
-            <h4>Le PC Slayer : ton passe vers la victoire</h4>
-            <p className="gray ">
+            <h4 className="mb-4">Le PC Slayer : ton passe vers la victoire</h4>
+            <p className="gray  mb-4">
               Plonge au cœur de l'action avec le PC Gamer AMD Ryzen 5 Slayer.
               Conçu pour les aventuriers du gaming, ce bijou technologique offre
               des performances inégalées pour des sessions de jeu épiques. Doté
@@ -234,8 +236,8 @@ export default function DetailedProducts() {
               RTX, le Slayer est prêt à défier les limites de la réalité
               virtuelle.
             </p>
-            <h6>La porte d'entrée vers le gaming à un prix jamais vu</h6>
-            <p className="gray">
+            <h6 className="mb-4">La porte d'entrée vers le gaming à un prix jamais vu</h6>
+            <p className="gray ">
               Forge ton propre destin gaming avec le PC Gamer AMD Ryzen 5
               Slayer. Megaport optimisé ce PC pour mettre à ta disposition des
               composants modernes et actuels, à un prix défiant toute
@@ -243,7 +245,7 @@ export default function DetailedProducts() {
               experts et testé avec soin avant l'expédition.
             </p>
             <h6>Performance sans limite</h6>
-            <p className="gray">
+            <p className="gray ">
               Exploite toute la puissance à ta disposition avec le SSD M.2 haute
               performance du Slayer. Charge instantanément tes jeux préférés et
               laisse-toi emporter par l'action sans aucun temps de chargement.

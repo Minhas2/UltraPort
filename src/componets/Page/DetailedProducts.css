@@ -90,10 +90,14 @@
     outline: none; 
   }
 
-.form-Avis-btn{
+  .form-Avis-btn {
     text-transform: uppercase;
-    padding: 15px 30px ;
+    background: white;
+    font-size: 14px;
+    padding: 17px 44px;
+    font-weight: 600;
     border: none;
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
 }
 
 .form-Avis-btn:hover {
@@ -126,9 +130,10 @@
   .product-btn{
     background-color: #89c600;
      border: none;
-     padding: 0px 10px;
+     padding: 0px 20px;
      color: white;
      font-weight: bold;
+     clip-path: polygon(0.4rem 0, 100% 0, 100% 100%, 0 100%);
 
   }
 
@@ -162,6 +167,32 @@
     --bs-gutter-x: 0rem;
   }
 
+  .detail-h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+
+
+
+  @media (max-width: 1024px) {
+    .product-btn {
+     
+      border: none;
+      padding: 0px 10px;
+      
+  }
+
+  }
+
+  @media (max-width: 991px) {
+ .mt-991{
+  margin-top: 20px;
+ }
+  }
+
+
+
   @media (max-width: 575px) {
     .product-btn {
       align-items: center;
@@ -177,6 +208,29 @@
 
   }
 
+
+
+  @media (max-width: 425px) {
+    .detail-h1 {
+      font-size: 22px;
+      font-weight: 300;
+  }
+
+  .mob-span{
+    font-size: 10px;
+  }
+
+  .product-btn {
+    padding: 2px 15px;
+   
+}
+
+
+
+  }
+
+
+
   @media (max-width: 412px) {
     .product-btn {
       align-items: center;
@@ -189,9 +243,9 @@
       clip-path: polygon(0.4rem 0, 100% 0, 100% 100%, 0 100%);
   }
 
-  .f-357 {
-    font-size: 14px;
-}
 
 
   }
+
+
+ 

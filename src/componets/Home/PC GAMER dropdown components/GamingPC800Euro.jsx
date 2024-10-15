@@ -1,6 +1,6 @@
 import React from "react";
 import "./GamingPC800Euro.css";
-import Card from "../Card/Card";
+import Card from '../../../componets/Card/Card';
 
 const productCardData = [
   {
@@ -62,29 +62,35 @@ const productCardData = [
 export default function GamingPC800Euro() {
   return (
     <>
-      <div className="container pops">
-        <div className="d-flex mt-4 font-8">
-          <p>
+      <div className="container pops py-navEURO">
+        <div className="d-flex  font-u">
+          <p className="mb-0">
             Accueil <span className="ps-2">&gt;</span>
           </p>
-          <p className="ps-2 ">Gaming PC 800 Euro</p>
+          <p className="ps-2 mb-0">Gaming PC 800 Euro</p>
         </div>
       </div>
 
-      <div className="bg-blk text-white py-5">
-        <div className="container pops">
-          <h2 className="text-center">
-            <span className="green">PC Gamer à 800 €:</span> pour bien <br />{" "}
-            débuter dans l'univers du <br /> gaming à petit prix
-          </h2>
-          <p className="gray text-center mb-5">
+      <div className="bg-blk text-white ">
+        {/* Small Strip */}
+        <div className="d-flex justify-content-center ">
+          <div className=" mini-border"></div>
+        </div>
+        {/* Small Strip */}
+
+        <div className="container pops py-euroHero">
+          <h1 className="text-center">
+            <span className="green">PC Gamer à 800 €:</span> pour bien <br className="none-425"/>{" "}
+            débuter dans l'univers du <br className="none-425"/> gaming à petit prix
+          </h1>
+          <p className="gray text-center mb-120 mt-4 ">
             Performance fluide pour un prix modique et la porte d’entrée idéale{" "}
-            <br /> dans le monde du gaming
+            <br className="none-425"/> dans le monde du gaming
           </p>
 
           <div className="d-flex justify-content-center flex-column m-euro">
             <h2 className="">Découvre nos PC Gamer à moins de 800 €</h2>
-            <p className="gray font-8">
+            <p className="gray font-23">
               Pas besoin de composants haut de gamme pour plonger dans le
               gaming. Avec un budget de 800 €, tu obtiens un PC Gamer solide,
               parfait pour le gaming occasionnel et les applications
@@ -98,13 +104,13 @@ export default function GamingPC800Euro() {
       </div>
 
       <div className="container">
-        <Card productCardData={productCardData} />
+      <Card address="../../../assets/image" productCardData={productCardData} />
       </div>
 
       <div className="bg-blk text-white py-5">
         <div className="container pops">
-          <div className=" text-white m-euro game-font">
-            <h4>Performance solide à petit prix : PC Gamer pour débuter</h4>
+          <div className=" text-white m-euro ">
+            <h4 className="mb-4">Performance solide à petit prix : PC Gamer pour débuter</h4>
             <p className="gray ">
               La catégorie des 800 € est idéale pour commencer dans le gaming.
               Beaucoup de nos PC dans cette gamme de prix sont équipés de iGPU –
@@ -124,9 +130,9 @@ export default function GamingPC800Euro() {
               auras besoin.
             </p>
 
-            <h4>PC Gamer à 800 € : tes avantages chez Megaport</h4>
+            <h4 className="mb-4">PC Gamer à 800 € : tes avantages chez Megaport</h4>
 
-            <ul className="gray gamer-li font-8 p-0 mb-5">
+            <ul className="gray gamer-li  p-0 mb-5">
               <li>Plus de 95 % de satisfaction client</li>
               <li>Livraison Premium rapide</li>
               <li>Large choix de matériel abordable de grandes marques</li>
@@ -140,8 +146,21 @@ export default function GamingPC800Euro() {
               <li>Partenaire Microsoft</li>
             </ul>
 
-            <h2><span className="green">PC Gamer à 800 €:</span> commence ton aventure gaming maintenant !</h2>
-            <p className="gray">Un PC Gamer à 800 € est la solution idéale pour entrer dans l'univers du gaming sans dépasser ton budget. Ces PC sont parfaits pour les joueurs débutants ou ceux qui cherchent un ordinateur fiable pour un gaming occasionnel. Grâce aux iGPU, tu peux démarrer immédiatement et ajouter une carte graphique pour encore plus de performance plus tard. Nos configurations sont pensées pour que tu économises aujourd'hui et que tu puisses facilement évoluer demain. Choisis ton système et lance-toi dans l'aventure gaming !</p>
+            <h2 className="mb-4">
+              <span className="green">PC Gamer à 800 €:</span> commence ton
+              aventure gaming <br className="none425" /> maintenant !
+            </h2>
+            <p className="gray">
+              Un PC Gamer à 800 € est la solution idéale pour entrer dans
+              l'univers du gaming sans dépasser ton budget. Ces PC sont parfaits
+              pour les joueurs débutants ou ceux qui cherchent un ordinateur
+              fiable pour un gaming occasionnel. Grâce aux iGPU, tu peux
+              démarrer immédiatement et ajouter une carte graphique pour encore
+              plus de performance plus tard. Nos configurations sont pensées
+              pour que tu économises aujourd'hui et que tu puisses facilement
+              évoluer demain. Choisis ton système et lance-toi dans l'aventure
+              gaming !
+            </p>
           </div>
         </div>
       </div>

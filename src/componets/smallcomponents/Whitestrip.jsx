@@ -1,5 +1,6 @@
 // WhiteStrip.js
 import React, { useEffect, useState } from "react";
+import "./Whitestrip.css"
 
 const WhiteStrip = ({
   installmentOptions,
@@ -28,7 +29,8 @@ const WhiteStrip = ({
     <>
       {isMobile ? (
         <>
-          <div className="container pops py-3">
+        <div className="upper">
+          <div className="container pops py-white">
             <div className="row d-flex align-items-center">
               <div className="col-6">
                 <div className="d-flex flex-column">
@@ -44,13 +46,14 @@ const WhiteStrip = ({
               <div className="col-6">
                 {" "}
                 <p className="green mb-0 f-357">
-                  <i className="fa-regular fa-clock"></i>
-                  <span className="ps-2">
+                  {/* <i className="fa-regular fa-clock"></i> */}
+                  <span className="ps-2 mob-span">
                     Délai de livraison 4-6 jours ouvrés
                   </span>
                 </p>
               </div>
             </div>
+          </div>
           </div>
 
           <div className="bot-mob-alma">
@@ -63,7 +66,7 @@ const WhiteStrip = ({
                 <div className="col-6">
                   <div className="d-flex justify-content-end">
                     <button className="product-btn d-flex ">
-                      Un problème est survenu
+                     AJOUITER AU PAINIER
                       <i className="fas fa-shopping-cart ps-2" />
                     </button>
                   </div>
@@ -109,12 +112,12 @@ const WhiteStrip = ({
               )}
             </div>
 
-            <div className="d-flex">
+            <div className="d-flex mt-991">
               <div className="d-flex flex-column">
                 <p className="line-through mb-0 text-danger">629,00 €</p>
                 <h2 className="mb-0">599,00 €</h2>
               </div>
-              <button className="product-btn ms-3">
+              <button className="product-btn  ms-3">
                 Un problème est survenu
                 <i className="fas fa-shopping-cart ps-2" />
               </button>

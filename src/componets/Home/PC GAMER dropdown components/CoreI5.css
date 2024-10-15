@@ -2,12 +2,26 @@
     font-size: .8rem;
 }
 
+.font-16 {
+  font-size: 16px;
+}
+
+
 .I5-back{
   background-color: #101922;
 }
 
+.I5-back h4{
+  font-size: 30px;
+}
+
+.I5-back h2 {
+  font-size: 24px;
+}
+
+
 .I5-back p{
-  font-size: .8rem;
+  font-size: 16px;
 }
 
 .filter-bar {
@@ -22,11 +36,13 @@
 
 
 .I5  .dropdown-toggle {
-    border: 1px solid #d1d3d4;
-    padding: 10px;
-    background-color: white;
-    border-radius: 0;
-  }
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #262828;
+  padding: 10px;
+  background-color: white;
+  border-radius: 0;
+}
 
 .I5  .dropdown-menu {
     max-height: 300px;
@@ -35,9 +51,6 @@
   }
 
 
-.IDrop  .dropdown-toggle::after {
-    margin-left: 7.255em;
-}
 .IDrop  .dropdown-menu {
     max-height: 300px;
     overflow-y: auto;

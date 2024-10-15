@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Card.css";
 
-export default function Card({ productCardData }) { // Accept the data as props
+export default function Card({ productCardData, address }) { // Accept the address as a prop
 
   const [hoveredId, setHoveredId] = useState(null); // State to track which card is hovered
 
@@ -35,7 +35,7 @@ export default function Card({ productCardData }) { // Accept the data as props
             >
               <div className="card_img mb-2 w-100">
                 <img
-                  src={hoveredId === product.id ? `../assets/image/${product.hoverImgURL}` : `../assets/image/${product.imgURL}`}
+                  src={hoveredId === product.id ? `${address}/${product.hoverImgURL}` : `${address}/${product.imgURL}`}
                   alt={product.title}
                   className="img-fluid"
                 />

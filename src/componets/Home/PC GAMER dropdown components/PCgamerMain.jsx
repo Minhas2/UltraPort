@@ -1,6 +1,7 @@
 import React from "react";
 import "./PCgamerMain.css";
-import Card from "../Card/Card";
+import Card from '../../../componets/Card/Card';
+import DropCommon from "./PC GAMER SUB/DropCommon";
 
 const productCardData = [
   {
@@ -63,18 +64,18 @@ export default function PCgamerMain() {
   return (
     <>
       <div className="container pops">
-        <div className="d-flex mt-4 font-8">
-          <p>
+        <div className="d-flex my-4 font-u flex-wrap">
+          <p className="mb-0">
             Accueil <span className="ps-2">&gt;</span>
           </p>
-          <p className="ps-2 ">PC Gamer</p>
+          <p className="ps-2 mb-0">PC Gamer</p>
         </div>
 
         <p className="text-end">
-          <img src="../assets/Windows11.png" alt="" />
+          <img src="../../assets/Windows11.png" alt="" />
         </p>
 
-        <h3 className="bold">
+        <h3 className=" h3-gamer mt-4">
           PC gamer Megaport - Performances haut de gamme à prix mini
         </h3>
 
@@ -99,257 +100,40 @@ export default function PCgamerMain() {
 
         <div className="row">
           <div className="col-12">
-            <img src="../assets/pcgamer.jpg" alt="" className="w-100" />
+            <img src="../../assets/pcgamer.jpg" alt="" className="w-100" />
           </div>
         </div>
 
         <div className="container-fluid filter-bar mt-4">
-          <div className="py-3 ps-3 d-flex border-pc overflow">
+          <div className="py-3 ps-3 d-flex border-pc flex-nowrap overflow-auto">
             <div>
-              {" "}
               PC Gamer <span className="counter">(97)</span>
             </div>
-            <div className="ps-3">
-              {" "}
+            <div className="ms-3">
               PC Gamer Intel <span className="counter">(34)</span>
             </div>
-            <div className="ps-3">
-              {" "}
+            <div className="ms-3">
               PC Gamer AMD <span className="counter">(37)</span>
             </div>
-            <div className="ps-3">
-              {" "}
+            <div className="ms-3">
               PC gamer complet <span className="counter">(14)</span>
             </div>
-            <div className="ps-3">
-              {" "}
+            <div className="ms-3">
               PC Gamer fixe <span className="counter">(11)</span>
             </div>
-            <div className="ps-3">
-              {" "}
+            <div className="ms-3">
               PC gamer pour tout budget <span className="counter">(9)</span>
             </div>
-            <div className="ps-3">
-              {" "}
+            <div className="ms-3">
               Windows 11 <span className="counter">(0)</span>
             </div>
           </div>
-          <div className="row p-3 I5">
-            {/* Trier Dropdown */}
-            <div className="col-lg-2 ">
-              <div className="dropdown w-100 IDrop">
-                <button
-                  className="btn dropdown-toggle w-100"
-                  type="button"
-                  id="sortDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Trier
-                </button>
-                <ul className="dropdown-menu " aria-labelledby="sortDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Option 1
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Option 2
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Option 3
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* Prix Dropdown */}
-            <div className="col-lg-2">
-              <div className="dropdown w-100 IDrop">
-                <button
-                  className="btn dropdown-toggle w-100"
-                  type="button"
-                  id="priceDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Prix
-                </button>
-                <ul className="dropdown-menu" aria-labelledby="priceDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Low to High
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      High to Low
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            {/* Processor Dropdown */}
-            <div className="col-lg-2">
-              <div className="dropdown w-100 PDrop">
-                <button
-                  className="btn dropdown-toggle w-100"
-                  type="button"
-                  id="priceDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Processor
-                </button>
-                <ul className="dropdown-menu" aria-labelledby="priceDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Low to High
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      High to Low
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Carte Graphique Dropdown */}
-            <div className="col-lg-2">
-              <div className="dropdown IDrop">
-                <button
-                  className="btn dropdown-toggle w-100"
-                  type="button"
-                  id="gpuDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Carte Graphique
-                </button>
-                <ul className="dropdown-menu" aria-labelledby="gpuDropdown">
-                  <li>
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id="gpu1"
-                      />
-                      <label className="form-check-label" htmlFor="gpu1">
-                        Nvidia GeForce RTX 3050 (3)
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id="gpu2"
-                      />
-                      <label className="form-check-label" htmlFor="gpu2">
-                        Nvidia GeForce RTX 3060 (3)
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id="gpu3"
-                      />
-                      <label className="form-check-label" htmlFor="gpu3">
-                        Nvidia GeForce RTX 4060 Ti (3)
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id="gpu4"
-                      />
-                      <label className="form-check-label" htmlFor="gpu4">
-                        Nvidia GeForce RTX 4070 Super (1)
-                      </label>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* SSD Dropdown */}
-            <div className="col-lg-2">
-              <div className="dropdown IDrop">
-                <button
-                  className="btn dropdown-toggle w-100"
-                  type="button"
-                  id="ssdDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  SSD
-                </button>
-                <ul className="dropdown-menu" aria-labelledby="ssdDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      512GB
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      1TB
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      2TB
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* RAM Dropdown */}
-            <div className="col-lg-2">
-              <div className="dropdown IDrop">
-                <button
-                  className="btn dropdown-toggle w-100"
-                  type="button"
-                  id="ramDropdown"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  RAM
-                </button>
-                <ul className="dropdown-menu" aria-labelledby="ramDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      16GB
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      32GB
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      64GB
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <DropCommon />
         </div>
 
-        <Card productCardData={productCardData} />
+        <Card address="../../../assets/image" productCardData={productCardData} />
+
       </div>
 
       <div className="gray-back">
@@ -382,11 +166,11 @@ export default function PCgamerMain() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-between py-5 pops">
+      <div className="d-flex justify-content-between py-5 pops  pc-hero">
         <div className="row">
-          <div className="col-lg-9">
+          <div className="col-lg-9 p-425">
             <h2>
-              Configure toi-même ton PC gamer <br />
+              Configure toi-même ton PC gamer <br className="none-425" />
               selon tes préférences
             </h2>
             <p className="mt-5 gray">
@@ -413,21 +197,21 @@ export default function PCgamerMain() {
             </p>
           </div>
           <div className="col-lg-3">
-            <img src="../assets/g1.jpg" alt="" className="w-100" />
+            <img src="../../assets/g1.jpg" alt="" className="w-100" />
           </div>
         </div>
       </div>
 
-      <div className="gray-back">
+      <div className="gray-back pc-hero">
         <div className="d-flex justify-content-between py-5 pops">
           <div className="row">
             <div className="col-lg-3">
-              <img src="../assets/g2.jpg" alt="" className="w-100" />
+              <img src="../../assets/g2.jpg" alt="" className="w-100" />
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-9 p-425">
               <h2>
-                La meilleure sélection de ordinateur gaming <br /> pour tous les
-                besoins
+                La meilleure sélection de ordinateur gaming{" "}
+                <br className="none-425" /> pour tous les besoins
               </h2>
               <p className="mt-5 gray">
                 Les attentes vis-à-vis d'un Ordinateur Gaming sont variées et
@@ -446,16 +230,16 @@ export default function PCgamerMain() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-between py-5 pops">
+      <div className="d-flex justify-content-between py-5 pops pc-hero">
         <div className="row">
           <div className="col-lg-3">
-            <img src="../assets/g3.jpg" alt="" className="w-100" />
+            <img src="../../assets/g3.jpg" alt="" className="w-100" />
           </div>
 
-          <div className="col-lg-9">
+          <div className="col-lg-9 p-425">
             <h2>
-              Utiliser parfaitement son PC gamer - facilement <br /> et sans
-              attendre
+              Utiliser parfaitement son PC gamer - facilement{" "}
+              <br className="none-425" /> et sans attendre
             </h2>
             <p className="mt-5 gray">
               Acheter un PC gamer parfait chez Megaport n'est pas compliqué et
@@ -495,7 +279,7 @@ export default function PCgamerMain() {
       <div className="gray-back">
         <div className="container">
           <div className="py-5 text-center ">
-            <h4>
+            <h4 className="mb-4">
               Trouve le PC gaming parfait avec les toutes dernières cartes
               graphiques
             </h4>
@@ -519,12 +303,12 @@ export default function PCgamerMain() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-between py-5 pops">
+      <div className="d-flex justify-content-between py-5 pops pc-hero">
         <div className="row">
-          <div className="col-lg-9">
+          <div className="col-lg-9 p-425">
             <h2>
-              Utiliser parfaitement son PC gamer - facilement <br /> et sans
-              attendre
+              Utiliser parfaitement son PC gamer - facilement{" "}
+              <br className="none-425" /> et sans attendre
             </h2>
             <p className="mt-5 gray">
               Acheter un PC gamer parfait chez Megaport n'est pas compliqué et
@@ -560,18 +344,18 @@ export default function PCgamerMain() {
           </div>
 
           <div className="col-lg-3">
-            <img src="../assets/g4.jpg" alt="" className="w-100" />
+            <img src="../../assets/g4.jpg" alt="" className="w-100" />
           </div>
         </div>
       </div>
 
-      <div className="gray-back">
+      <div className="gray-back pc-hero">
         <div className="d-flex justify-content-between py-5 pops">
           <div className="row">
-            <div className="col-lg-9">
+            <div className="col-lg-9 p-425">
               <h2>
-                La meilleure sélection de ordinateur gaming <br /> pour tous les
-                besoins
+                La meilleure sélection de ordinateur gaming{" "}
+                <br className="none-425" /> pour tous les besoins
               </h2>
               <p className="mt-5 gray">
                 Les attentes vis-à-vis d'un Ordinateur Gaming sont variées et
@@ -588,23 +372,23 @@ export default function PCgamerMain() {
             </div>
 
             <div className="col-lg-3">
-              <img src="../assets/g5.jpg" alt="" className="w-100" />
+              <img src="../../assets/g5.jpg" alt="" className="w-100" />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="gray-back">
+      <div className="gray-back pc-hero">
         <div className="d-flex justify-content-between py-5 pops">
           <div className="row">
             <div className="col-lg-3">
-              <img src="../assets/g6.jpg" alt="" className="w-100" />
+              <img src="../../assets/g6.jpg" alt="" className="w-100" />
             </div>
 
-            <div className="col-lg-9">
+            <div className="col-lg-9 p-425">
               <h2>
-                La meilleure sélection de ordinateur gaming <br /> pour tous les
-                besoins
+                La meilleure sélection de ordinateur gaming{" "}
+                <br className="none-425" /> pour tous les besoins
               </h2>
               <p className="mt-5 gray">
                 Les attentes vis-à-vis d'un Ordinateur Gaming sont variées et
@@ -623,16 +407,16 @@ export default function PCgamerMain() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-between py-5 pops">
+      <div className="d-flex justify-content-between py-5 pops pc-hero">
         <div className="row">
           <div className="col-lg-3">
-            <img src="../assets/g7.jpg" alt="" className="w-100" />
+            <img src="../../assets/g7.jpg" alt="" className="w-100" />
           </div>
 
-          <div className="col-lg-9">
+          <div className="col-lg-9 p-425">
             <h2>
-              La meilleure sélection de ordinateur gaming <br /> pour tous les
-              besoins
+              La meilleure sélection de ordinateur gaming{" "}
+              <br className="none-425" /> pour tous les besoins
             </h2>
             <p className="mt-5 gray">
               Les attentes vis-à-vis d'un Ordinateur Gaming sont variées et très
@@ -659,16 +443,16 @@ export default function PCgamerMain() {
           <div className="container">
             <div className="mt-5 row">
               <div className="col-lg-3">
-                <img src="../assets/Amd.png" alt="" className="w-100" />
+                <img src="../../assets/Amd.png" alt="" className="w-100" />
               </div>
               <div className="col-lg-3">
-                <img src="../assets/Amd.png" alt="" className="w-100" />
+                <img src="../../assets/Amd.png" alt="" className="w-100" />
               </div>
               <div className="col-lg-3">
-                <img src="../assets/Amd.png" alt="" className="w-100" />
+                <img src="../../assets/Amd.png" alt="" className="w-100" />
               </div>
               <div className="col-lg-3">
-                <img src="../assets/Amd.png" alt="" className="w-100" />
+                <img src="../../assets/Amd.png" alt="" className="w-100" />
               </div>
             </div>
           </div>

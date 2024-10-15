@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./HomeProdcutCarsouel.css";
-import CardHome from "../Card/CardHome"; // Import the Card component
+import Card from "../../Card/CardHome";
+
 
 const productData = [
   {
@@ -201,7 +202,7 @@ export default function HomeProdcutCarsouel() {
                       )
                       .map((product, index) => (
                         <div className="col-md-4" key={product.id}>
-                          <CardHome productCardData={[product]} />{" "}
+                          <Card productCardData={[product]} />{" "}
                           {/* Pass individual product as prop */}
                         </div>
                       ))}

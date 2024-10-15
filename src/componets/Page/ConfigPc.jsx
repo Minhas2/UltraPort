@@ -1,35 +1,36 @@
 import React, { useState } from "react";
-import "./ConfigPC.css";
+import "./ConfigPC.css"
 import WhiteStrip from "../smallcomponents/Whitestrip";
 
 export default function ConfigPc() {
   // Images array with main and thumbnail versions
   const images = [
     {
-      main: "../assets/p1.jpg",
-      thumbnail: "../assets/mini-p1.jpg",
+      main: "../../assets/p1.jpg",
+      thumbnail: "../../assets/mini-p1.jpg",
     },
     {
-      main: "../assets/p1.jpg",
-      thumbnail: "../assets/mini-p1.jpg",
+      main: "../../assets/p1.jpg",
+      thumbnail: "../../assets/mini-p1.jpg",
     },
     {
-      main: "../assets/p3.jpg",
-      thumbnail: "../assets/mini-p3.jpg",
+      main: "../../assets/p3.jpg",
+      thumbnail: "../../assets/mini-p3.jpg",
     },
     {
-      main: "../assets/p4.jpg",
-      thumbnail: "../assets/mini-p4.jpg",
+      main: "../../assets/p4.jpg",
+      thumbnail: "../../assets/mini-p4.jpg",
     },
     {
-      main: "../assets/p5.jpg",
-      thumbnail: "../assets/mini-p5.jpg",
+      main: "../../assets/p5.jpg",
+      thumbnail: "../../assets/mini-p5.jpg",
     },
     {
-      main: "../assets/p6.jpg",
-      thumbnail: "../assets/mini-p6.jpg",
+      main: "../../assets/p6.jpg",
+      thumbnail: "../../assets/mini-p6.jpg",
     },
   ];
+
 
   // Function to handle thumbnail click
   const handleImageClick = (index) => {
@@ -76,27 +77,27 @@ export default function ConfigPc() {
 
   const items = [
     {
-      image: "../assets/pop1.jpg",
+      image: "../../assets/pop1.jpg",
       title: "Game Pass",
       details: "details", // or you could link to a detailed page or provide a function
     },
     {
-      image: "../assets/pop2.png",
+      image: "../../assets/pop2.png",
       title: "Powered by MSI - Advanced",
       details: "details",
     },
     {
-      image: "../assets/pop3.png",
+      image: "../../assets/pop3.png",
       title: "Powered by MSI - Ultimate",
       details: "details",
     },
     {
-      image: "../assets/pop4.jpg",
+      image: "../../assets/pop4.jpg",
       title: "AMD 2-Game Bundle",
       details: "details",
     },
     {
-      image: "../assets/pop5.jpg",
+      image: "../../assets/pop5.jpg",
       title: "Nvidia Game Bundle - Star Wars Outlaws",
       details: "details",
     },
@@ -137,47 +138,47 @@ export default function ConfigPc() {
 
   const systemDetails = [
     {
-      image: "../assets/system.svg",
+      image: "../../assets/system.svg",
       title: "Système d'Exploitation",
       description: "Sans système d'exploitation",
     },
     {
-      image: "../assets/system1.svg", // Add a different image for another system if needed
+      image: "../../assets/system1.svg", // Add a different image for another system if needed
       title: "Processeur",
       description: "AMD Ryzen 5 3600 6x 3.60GHz (4.10 GHz Turbo)",
     },
     {
-      image: "../assets/system2.svg", // Add a different image for another system if needed
+      image: "../../assets/system2.svg", // Add a different image for another system if needed
       title: "Carte graphique",
       description: "Nvidia GeForce RTX 3050 6Go VRAM",
     },
     {
-      image: "../assets/system.svg",
+      image: "../../assets/system.svg",
       title: "Système d'Exploitation",
       description: "Sans système d'exploitation",
     },
     {
-      image: "../assets/system1.svg", // Add a different image for another system if needed
+      image: "../../assets/system1.svg", // Add a different image for another system if needed
       title: "Processeur",
       description: "AMD Ryzen 5 3600 6x 3.60GHz (4.10 GHz Turbo)",
     },
     {
-      image: "../assets/system2.svg", // Add a different image for another system if needed
+      image: "../../assets/system2.svg", // Add a different image for another system if needed
       title: "Carte graphique",
       description: "Nvidia GeForce RTX 3050 6Go VRAM",
     },
     {
-      image: "../assets/system.svg",
+      image: "../../assets/system.svg",
       title: "Système d'Exploitation",
       description: "Sans système d'exploitation",
     },
     {
-      image: "../assets/system1.svg", // Add a different image for another system if needed
+      image: "../../assets/system1.svg", // Add a different image for another system if needed
       title: "Processeur",
       description: "AMD Ryzen 5 3600 6x 3.60GHz (4.10 GHz Turbo)",
     },
     {
-      image: "../assets/system2.svg", // Add a different image for another system if needed
+      image: "../../assets/system2.svg", // Add a different image for another system if needed
       title: "Carte graphique",
       description: "Nvidia GeForce RTX 3050 6Go VRAM",
     },
@@ -203,7 +204,7 @@ export default function ConfigPc() {
       <div className="container pops">
         <div className="row">
           <div className="col-lg-6">
-            <div className="d-flex mt-4 font-8">
+            <div className="d-flex mt-4 font-u flex-wrap">
               <p>
                 Accueil <span className="ps-2">&gt;</span>
               </p>
@@ -245,7 +246,7 @@ export default function ConfigPc() {
             <div className="d-flex mt-4">&nbsp;</div>
             <div className="d-flex mt-4  flex-column">
               <p className="font-8">
-                <span className="green">Écrire la première critique </span>
+                <span className="green underline">Écrire la première critique </span>
                 <span className="px-3">|</span>
 
                 <span className="gray">SKU:CON100</span>
@@ -255,12 +256,12 @@ export default function ConfigPc() {
                 gamer
               </h3>
 
-              <p className="gray font-8">
+              <p className=" font-16-config">
                 Vous souhaitez personnaliser un PC en fonction de vos besoins
                 spécifiques ? C'est facile ! Notre configurateur PC est là pour
                 vous !
               </p>
-              <p className="gray font-8">
+              <p className=" font-16-config">
                 Le configurateur de Megaport vous permet de configurer votre
                 propre PC gamer de chez vous. Profitez de notre savoir-faire en
                 tant que monteur de PC et choisissez parmi notre large gamme de
@@ -270,7 +271,7 @@ export default function ConfigPc() {
               </p>
 
               <p>
-                <img src="../assets/Windows11.png" alt="" />
+                <img src="../../assets/Windows11.png" alt="" />
               </p>
 
               <p></p>
@@ -332,7 +333,7 @@ export default function ConfigPc() {
       </div>
 
       {/* Function component */}
-      <div className="I5-back ">
+      <div className="Config-back ">
         {/* small strip */}
         <div className="d-flex justify-content-center">
           <div className=" mini-border"></div>
@@ -343,19 +344,19 @@ export default function ConfigPc() {
           <div className=" text-white">
             <h4 className="mb-5">Fonctionnalités</h4>
 
-            <h4>Configurez votre PC en toute simplicité avec le configurateur de Megaport</h4>
+            <h4 className="mb-4">Configurez votre PC en toute simplicité avec le configurateur de Megaport</h4>
             <p className="gray ">
             Vous souhaitez configurer vous-même un ordinateur et le personnaliser selon vos besoins ? Avec notre configurateur PC, c'est simple !
             </p>
             <p className="gray">Le configurateur de Megaport vous permet de configurer votre ordinateur en un clin d'œil. Profitez de notre savoir-faire en matière de configuration d'ordinateurs et choisissez parmi des centaines de composants. Vous pouvez facilement configurer vous-même une config que vous recevrez chez vous en quelques jours seulement. Lancez-vous de suite !</p>
             
-            <h6>Composez votre PC gamer personnel avec le configurateur Megaport</h6>
+            <h5 className="mb-4">Composez votre PC gamer personnel avec le configurateur Megaport</h5>
             <p className="gray">
             Chaque gamer a ses préférences et ses exigences en termes de PC fixes. Notre configurateur PC vous offre une large sélection de composants pour monter votre PC, du simple PC d'entrée de gamme, au bolide gaming haut de gamme.
             </p>
             <p className="gray">Il y en a pour tout le monde chez Megaport ! Notre configurateur vous laisse le choix, du PC d'entrée de gamme pratique, à la machine gaming haut de gamme, en passant par un ordinateur milieu de gamme fiable. C'est à vous de déterminer comment vous allez configurer votre PC !</p>
           
-            <h6>Une large sélection de matériel de haute qualité</h6>
+            <h5 className="mb-4">Une large sélection de matériel de haute qualité</h5>
             <p className="gray">
             Notre gamme contient les meilleurs produits et les plus récents sur le marché. Vous êtes sûr de trouver ce que vous cherchez.
             </p>
@@ -363,13 +364,13 @@ export default function ConfigPc() {
             À vous de choisir ! Préférez-vous vous baser sur un processeur Intel ou AMD ? Voulez-vous faire confiance au leader du marché Intel ou à son concurrent AMD ? En fonction de votre choix, vous devrez opter pour une gamme différente de carte mère. Pas d'inquiétude cependant ! Notre configurateur PC ne vous propose que les composants compatibles entre eux ! Pour votre configuration, notre site vous propose une carte mère compatible avec processeur Intel, ou bien notre sélection carte mère pour processeur AMD.
             </p>
 
-            <h6>Le style est aussi important</h6>
+            <h5 className="mb-4">Le style est aussi important</h5>
             <p className="gray">Notre sélection de boitiers fait l'objet d'une attention toute particulière. Nous savons combien il est important pour vous que votre PC ressemble à quelque chose et soit présent dans votre setup avec style ! Megaport vous propose donc de choisir parmi une large gamme de boitiers stylés et pratiques ! Que vous cherchiez des boîtiers sobres et silencieux, ou bien dotés d'une grande fenêtre latérale et de nombreux éclairages RGB, vous devriez trouver votre bonheur dans notre configurateur PC.</p>
             <p className="gray">
             Si vous aimez en mettre plein les yeux, alors vous pouvez opter pour nos différents sets de ventilateurs avec éclairages RGB. Vous pourrez ainsi équiper votre boitier d'un splendide éclairage haut en couleurs, si celui-ci n'est pas déjà équipé de ventilateurs RGB.
             </p>
 
-            <h6>Une offre complète avec des accessoires adaptés</h6>
+            <h5 className="mb-4">Une offre complète avec des accessoires adaptés</h5>
             <p className="gray">Notre configurateur Megaport vous offre aussi la possibilité de sélectionner des accessoires adaptés et essentiels au bon fonctionnement de votre PC. La qualité est au rendez-vous !</p>
             <p className="gray">Vous pouvez sélectionner des packs clavier-souris avec ou sans fil qui vous permettront de vous frayer un chemin en toute sécurité dans l'univers du gaming. Pour dominer le jeu, vous trouverez également des souris gamer avec des fonctionnalités supplémentaires !</p>
             <p className="gray">Nous proposons aussi des claviers pour tous les styles et toutes les bourses. Un clavier à l'éclairage RGB est un vrai plus dans votre setup, en plus d'être essentiel pour votre utilisation. Ne faites plus de compromis entre style et efficacité !</p>
@@ -378,8 +379,8 @@ export default function ConfigPc() {
             Si vous ajoutez Windows à votre configuration, alors nous installons une licence officielle du fameux système d'exploitation sur votre disque dur, ou mieux, sur votre SSD si votre configuration en contient un. Que vous partiez sur un ordinateur bureautique ou un PC gamer, vous êtes certains de ne recevoir que du logiciel officiel chez Megaport !
             </p>
 
-            <h6>Configurez votre PC avec nos conseillers</h6>
-            <p className="gray">
+            <h5>Configurez votre PC avec nos conseillers</h5>
+            <p className="gray mb-5">
             Si vous avez des questions sur la composition de votre ordinateur ou que vous souhaitez obtenir des conseils, vous pouvez contacter notre support par email et téléphone ! Nous sommes à votre écoute et répondons avec plaisir à vos questions !
             </p>
           </div>
@@ -478,7 +479,7 @@ export default function ConfigPc() {
                   </div>
                 </div>
 
-                <div className="col-12 mt-3">
+                <div className="col-12 mt-3 ">
                   <button className="form-Avis-btn ">
                     Poster le commentaire
                   </button>

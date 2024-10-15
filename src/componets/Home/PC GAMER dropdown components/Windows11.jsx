@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Windows11.css";
-import Card from "../Card/Card";
+import Card from '../../../componets/Card/Card';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -129,7 +129,7 @@ export default function Windows11() {
   return (
     <>
       <div className="container pops">
-        <div className="d-flex mt-4 font-8">
+        <div className="d-flex mt-4 font-u">
           <p>
             Accueil <span className="ps-2">&gt;</span>
           </p>
@@ -167,7 +167,7 @@ export default function Windows11() {
         </div>
 
         <div className="container pops">
-          <Card productCardData={productCardData} />
+        <Card address="../../../assets/image" productCardData={productCardData} />
 
           <div className="row">
             <div className="col-12">
@@ -198,7 +198,7 @@ export default function Windows11() {
         </div>
 
         <div className="container mb-5">
-          <Card productCardData={productCardData} />
+        <Card address="../../../assets/image" productCardData={productCardData} />
         </div>
 
         {/* FAQ Section */}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Header.css";
 import DropdownNavItem from "./DropdownNavItem";
 import Mobileheader from "./mobileheader";
@@ -7,17 +7,24 @@ import ConfiguraterPc from "./dropdowns/ConfiguraterPc";
 import Ordinatur from "./dropdowns/Ordinatur";
 import PCeditiondrop from "./dropdowns/PCeditiondrop";
 import Reductions from "./dropdowns/Reductions";
-import DeskCanvas from "./Offcanvas/deskCanvas"; // Rename to use PascalCase
-import CoreI5 from "../Home/PC GAMER dropdown components/CoreI5";
-import AMD from "../Home/PC GAMER dropdown components/AMDRyzen";
-import PCgamercomplet from "../Home/PC GAMER dropdown components/PCgamercomplet";
-import GamingPC800Euro from "../Home/PC GAMER dropdown components/GamingPC800Euro";
-import Windows11 from "../Home/PC GAMER dropdown components/Windows11";
-import PCgamerMain from "../Home/PC GAMER dropdown components/PCgamerMain";
-
+import { Link } from "react-router-dom";
+import "./DropdownNavItem.css";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
+  const [show, setShow] = useState(false);
+
+  const navbarCollapseRef = useRef(null); // Add a ref to access the collapse element
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  // Function to handle navbar close
+  const closeNavbar = () => {
+    if (navbarCollapseRef.current && navbarCollapseRef.current.classList.contains("show")) {
+      navbarCollapseRef.current.classList.remove("show");
+    }
+  };
 
   // Update state based on window width
   const handleResize = () => {
@@ -40,65 +47,66 @@ export default function Header() {
       ) : (
         /* Desktop Header */
         <div className="top-header">
-          <div className="container">
-            <div className="d-flex justify-content-between text-white">
-              <div className="d-flex align-items-center top-font">
-                <i className="fa-solid fa-headphones"></i>
-                <div className="px-2">ULTRAPORT HOTLINE</div>
-                <div className="number">000000000</div>
-                <i className="fa-solid fa-circle-exclamation ps-2"></i>
-              </div>
+          <div className="preNavbar">
+            <div className="container">
+              <div className="d-flex justify-content-between text-white">
+                <div className="d-flex align-items-center top-font">
+                  <i className="fa-solid fa-headphones"></i>
+                  <div className="px-2">ULTRAPORT HOTLINE</div>
+                  <div className="number">000000000</div>
+                  <i className="fa-solid fa-circle-exclamation ps-2"></i>
+                </div>
 
-              <div className="d-flex align-items-center top-font">
-                <span className="gray">PAYS</span>
-                <div className="country ps-3">
-                  <div className=" dropdown">
-                    <button
-                      className="btn btn-secondary dropdown-toggle bg-transparent border-0"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <img src="../assets/flag-fr-fr.svg" alt="" /> FRANCE
-                    </button>
-                    <ul className="dropdown-menu dropdown-menu-dark w-100 custom-dropdown">
-                      <li>
-                        <a className="dropdown-item active" href="#">
-                          Italia
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Netherland
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Espana
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          United Kingdom
-                        </a>
-                      </li>
-                    </ul>
+                <div className="d-flex align-items-center top-font">
+                  <span className="gray">PAYS</span>
+                  <div className="country ps-3">
+                    <div className=" dropdown">
+                      <button
+                        className="btn btn-secondary dropdown-toggle bg-transparent border-0"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img src="../assets/flag-fr-fr.svg" alt="" /> FRANCE
+                      </button>
+                      <ul className="dropdown-menu dropdown-menu-dark w-100 custom-dropdown">
+                        <li>
+                          <a className="dropdown-item active" href="#">
+                            Italia
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Netherland
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Espana
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            United Kingdom
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
               {/* Logo */}
-              <a className="navbar-brand" href="#">
+              <Link className="navbar-brand" to={"/"} onClick={closeNavbar}>
                 <img
-                  src="../assets/ultrport.png"
+                  src="../../../assets/ultrport.png"
                   alt="Logo"
                   className="navbar-logo"
                 />
-              </a>
+              </Link>
               {/* Hamburger Icon for mobile */}
               <button
                 className="navbar-toggler"
@@ -115,85 +123,56 @@ export default function Header() {
               <div
                 className="collapse navbar-collapse justify-content-between"
                 id="navbarNav"
+                ref={navbarCollapseRef} // Attach ref to navbar collapse
               >
                 {/* Links (centered in desktop) */}
                 <ul className="navbar-nav mx-auto">
-                  <DropdownNavItem
-                    linkText="PC Gamer"
-                    dropdownContent={<div>Your PC Gamer content here!</div>}
-                  />
-                  <DropdownNavItem
-                    linkText="Configurateur PC"
-                    dropdownContent={<div>Your Configurator content here!</div>}
-                  />
-                  <DropdownNavItem
-                    linkText="Ordinateur de bureau"
-                    dropdownContent={<div>Your Desktop content here!</div>}
-                  />
-                  <DropdownNavItem
-                    linkText="PC Editions spéciales"
-                    dropdownContent={
-                      <div>Your Special Editions content here!</div>
-                    }
-                  />
-                  <DropdownNavItem
-                    linkText="Accessoires PC"
-                    dropdownContent={<div>Your Accessories content here!</div>}
-                  />
-                  <DropdownNavItem
-                    linkText="Réductions"
-                    dropdownContent={<div>Your Discounts content here!</div>}
-                  />
-                  <DropdownNavItem
-                    linkText="Promo"
-                    dropdownContent={<div>Your Promo content here!</div>}
-                  />
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/pc-gamer" onClick={closeNavbar}>PC Gamer</Link>
+                    <PcDrop />
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/" onClick={closeNavbar}>Configurateur PC</Link>
+                    <ConfiguraterPc />
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/" onClick={closeNavbar}>Ordinateur de bureau</Link>
+                    <Ordinatur />
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/" onClick={closeNavbar}>PC Editions spéciales</Link>
+                    <PCeditiondrop />
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/" onClick={closeNavbar}>Accessoires PC</Link>
+                    <PcDrop />
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/" onClick={closeNavbar}>Réductions</Link>
+                    <Reductions />
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/" onClick={closeNavbar}>Promo</Link>
+                  </li>
                 </ul>
 
                 {/* Icons with slanted lines */}
                 <div className="navbar-icons d-flex">
-                  <a href="#" className="nav-icon">
+                  <button className="nav-icon" onClick={closeNavbar}>
                     <i className="fas fa-search" />
-                  </a>
-                  <a href="#" className="nav-icon">
+                  </button>
+                  <Link to="/" className="nav-icon" onClick={closeNavbar}>
                     <i className="fas fa-user" />
-                  </a>
-                  <a
-                    href="#"
-                    className="nav-icon"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#searchOffcanvas"
-                    aria-controls="searchOffcanvas"
-                  >
+                  </Link>
+                  <button onClick={handleShow} className="nav-icon" onClick={closeNavbar}>
                     <i className="fas fa-shopping-cart" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
           </nav>
-
-          {/* DeskCanvas for off-canvas menu */}
-          <DeskCanvas />
         </div>
       )}
-
-      {/* Uncomment and use these dropdowns when needed */}
-      {/* <PcDrop /> */}
-      {/* <ConfiguraterPc /> */}
-      {/* <Ordinatur /> */}
-      {/* <PCeditiondrop /> */}
-      {/* <Reductions /> */}
-
-
-      {/*Uncomment and use them PC GAMER Components */}
-      {/* <CoreI5/> */}
-      {/* <AMD/> */}
-      {/* <PCgamercomplet/> */}
-      {/* <GamingPC800Euro/> */}
-      {/* <Windows11/> */}
-      {/* <PCgamerMain/> */}
-
-
     </>
   );
 }
